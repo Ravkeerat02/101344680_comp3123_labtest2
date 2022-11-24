@@ -27,16 +27,20 @@
 .App-link {
   color: #61dafb;
 }
-.search-bar{
-  align:center
+.search-box,.weather-box,.location-box{
+  text-align:center;
+  padding: 0;
+  margin: 1px;
 }
-.weather-box{
-  justify-content: center;
-  align-content: center;
-}
-.location-box{
-  justify-content: center;
-  align-content: center;
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 ; 
+  font-family:'Courier New', Courier, monospace;
+  background-color: #EEA47FFF;
+  color:black;
+  
 }
 
 @keyframes App-logo-spin {

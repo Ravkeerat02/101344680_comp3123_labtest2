@@ -30,22 +30,24 @@ function App() {
     let month = months[d.getMonth()];
     let year = d.getFullYear();
 
-    return `${day} ${date} ${month} ${year}`;
+    return `${day} ${date}  ${month} ${year}`;
   }
 
   return (
+    <div className="app">
     <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 293.15) ? 'app sun' : 'app') : 'app' }>
       <main>
           <div className="search-box">
             <input 
               type="text"
               className="search-bar"
-              placeholder="search..." 
+              placeholder="Enter" 
               onChange={e => setCity(e.target.value)}
               value={city}
               onKeyPress={search}
             />
           </div>
+          <br></br>
           {(typeof weather.main != "undefined") ? (
           <div>
             <div className="weather-box">
@@ -61,6 +63,7 @@ function App() {
           </div>
           ): ('')}
       </main>
+    </div>
     </div>
   );
 }
