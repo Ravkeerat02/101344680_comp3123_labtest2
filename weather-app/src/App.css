@@ -27,6 +27,17 @@
 .App-link {
   color: #61dafb;
 }
+.search-bar{
+  align:center
+}
+.weather-box{
+  justify-content: center;
+  align-content: center;
+}
+.location-box{
+  justify-content: center;
+  align-content: center;
+}
 
 @keyframes App-logo-spin {
   from {
