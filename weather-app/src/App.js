@@ -57,8 +57,11 @@ function App() {
               </div>
               
               <img className="icon" src={"https://openweathermap.org/img/wn/" + weather.weather[0].icon + ".png"} />
-                <div className="temp">{Math.round(weather.main.temp - 273.15)}°C</div>
-                <div className="weather">{weather.weather[0].main}</div>
+                <div className="temp">Temp{Math.round(weather.main.temp - 273.15)}°C</div>
+                <div className='minTemperature'>Minimum Temp{Math.round(weather.main.temp_min - 273.15)}°C</div>
+                <div className="weather">Weather condition:{weather.weather[0].main}</div>
+                <div className="humidity">Humidity:{weather.main.humidity}</div>
+                <div className="pressure">Pressure:{weather.main.pressure}</div>
             </div>
           </div>
           ): ('')}
